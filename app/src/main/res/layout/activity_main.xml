@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity" tools:ignore="MergeRootFrame"
+    android:background="#ff0487dc" >
+
+    <EditText
+        android:layout_width="297dp"
+        android:layout_height="67dp"
+        android:id="@+id/editText"
+        android:layout_gravity="center"
+        android:autoText="true"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:background="#ff18d9ff"
+        android:visibility="visible"
+        android:textColor="#ff000000"
+        android:editable="true"
+        android:enabled="true"
+        android:inputType="text"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="Please Text Here"
+        android:linksClickable="false" />
+
+    <Button
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:text="Create QR Code"
+        android:id="@+id/createBttn"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="0dp"
+        android:onClick="buttonOnClick" />
+
+    <ImageView
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top" />
+
+</FrameLayout>
